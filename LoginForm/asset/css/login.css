@@ -1,0 +1,138 @@
+:root {
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 7000;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 7000;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left {
+    height: 200px;
+}
+
+.left,
+.right {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), 
+    url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');
+    background-size: cover;
+}
+
+.left .copy {
+    color: #fff;
+    text-align: center;
+}
+
+.left p {
+    font-weight: 500;
+}
+
+.right .copy {
+    color: #000;
+    text-align: center;
+}
+
+.right .copy p {
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+}
+
+.right form {
+    width: 330px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.input-container.password {
+    position: relative;
+}
+
+.input-container.password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.7px;
+}
+
+.signup-button:hover {
+    cursor: pointer;
+    background: #2c4893;
+}
